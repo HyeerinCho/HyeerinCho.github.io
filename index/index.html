@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="./style.css"></link> 
+      <script src="https://kit.fontawesome.com/f8b80fb68b.js" crossorigin="anonymous"></script>
+      <title>To-do</title>
+  </head>  
+  <body> 
+    <div class="main">    
+        <div class="container">
+            <div class="box">
+                <h1 id="clock" style="justify-items: center;">00:00:00</h1>
+            </div>
+            <div class="box">
+                <h2>Let's go to do!</h2>
+                <form class="hidden" id="login-form">
+                    <input id="userName" required 
+                    maxlength="15" 
+                    type="text" 
+                    placeholder="What's your name?" />
+                </form>
+                <h2 class="hidden" id="greeting"></h2>
+            </div>
+            <div class="box">
+                <h3>📢&nbsp; Today weather</h3>
+                <div id="weather">
+                    <span id="first"></span>
+                    <br>
+                    <span id="mid"></span>
+                    <br>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div id="todo">
+            <h1>📝 Today's To-do List </h1>
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <div class="main">
+        <div id="quote" style="display: block;">
+            <span id="quote_content"></span>
+            <br>
+            <span id="quote_author"></span>
+        </div>      
+    </div>
+
+
+    <script src="./JS/background.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/greeting.js"></script>
+    <script src="./JS/quotose.js"></script>
+    <script src="./JS/todo.js"></script>
+    <script src="./JS/weather.js"></script>
+  </body>
+</html>
